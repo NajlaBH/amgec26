@@ -1,0 +1,37 @@
+{% extends "basicbase.html" %}
+
+{% load static %}
+{% load bootstrap_icons %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <div class="container" id="abstractsubmission">
+        <section>
+            <h2 style="color:#043E84;">Abstract Submission Guidelines</h2>
+            <p style="text-align: justify;">AMGEC 2026 which will be held, in <span style="color:olivedrab;">Tunisia</span>, on <span style="color:#043E84; font-weight: lighter;">March 26<span style="font-variant-position: super;">th</span>-29<span style="font-variant-position: super;">th</span>, 2026</span>. The purpose of the conference is to present the most important results coming from research activities in materials and green energy technologies and systems.</p>
+            <!-- ABSTRACT TEMPLATE  Start -->
+            <h2 style="color:#043E84; text-align: center; font-size: large; font-style: italic;">Download Abstract Template</h2>
+            <p style="text-align: justify;">Click the link below to download the Word file: <a href="{% static 'documents/doctpls/Abstract_Template.doc' %}" download>Abstract_Template.doc</a></p>
+        <!-- ABSTRACT TEMPLATE  End -->
+        </section>
+        <!-- ABSTRACT SUBMISSION SECTION Start -->
+        <div class="container">
+            <section id="id_abstrac_sub_form">
+                <div class="container mt-5 pt-5 mb-5">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" style="font-size: x-large; margin-bottom: 5%; padding:1%; border: solid 3px darkolivegreen;">Abstract Submission Form</h3>
+                        </div>
+                        <div class="panel-body">
+                            {% csrf_token %}
+                            {% crispy form %}
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+        <!-- ABSTRACT SUBMISSION SECTION  End -->
+
+    </div>  
+{% endblock %}

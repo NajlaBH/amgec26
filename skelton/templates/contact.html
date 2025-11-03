@@ -1,0 +1,26 @@
+{% extends "baseap.html" %}
+
+{% load crispy_forms_tags %}
+ 
+{% block title %}<h2 style="color:#043E84;">Contact Us</h2>{% endblock %}
+
+{% block content %} 
+<!-- CONTACT SECTION Start -->
+<div class="container">
+    <section id="contact">
+        <div class="container mt-5 pt-5 mb-5">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title" style="font-size: x-large; margin-bottom: 5%; padding:1%; border: solid 3px darkolivegreen;">GET IN TOUCH</h3>
+                </div>
+                <div class="panel-body">
+                   <!--{{ form|crispy }} -->
+                   {% crispy form %}
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</div>
+<!-- CONTACT SECTION End -->
+{% endblock %}

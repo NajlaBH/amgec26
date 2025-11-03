@@ -1,0 +1,33 @@
+{% extends "baseap.html" %}
+
+{% load static %}
+{% load bootstrap_icons %}
+
+{% block content %}
+
+<!-- Welcome word Start -->
+<div class="col1">
+    <div class="main-base-index">
+        <div class="divider-index">
+            <div class="container">
+                <section id="welcome">
+                    <div class="container" style="display: inline;">
+                        <img src="{% static 'imgs/logos/CRTEn_LOGO.png'%}" alt="CRTEn-LOGO" style="max-height: fit-content:40%; padding-right:30px;">
+                        <!--img src="{% static 'imgs/previews/AMGEC-EDITION.png'%}" alt="AMGEC-EDITION" style="padding-left:250px;"-->  
+                    </div> 
+                    <div class="container">
+                        <h2 style="margin-top:70px; color:#043E84; text-align: center;">Bridging the Gap between Research and Industry</h2>
+                        <p style="text-align: justify; font-size: x-large; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-indent: 10px;">The Research and Technology Centre of Energy (<span style="color:olivedrab;">CRTEn</span>) organizes the <span style="color:#567D76; font-weight: bold;">fourth edition</span> of the advanced materials and Green energy conference (<span style="color:#043E84;">AMGEC2026</span>)</p>
+                        <p style="text-align: justify; font-size: x-large; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-indent: 10px;">We welcome you to AMGEC 2026 which will be held, in <span style="color:olivedrab;">Tunisia</span>, on <span style="color:#043E84; font-weight: lighter;">March 26<span style="font-variant-position: super;">th</span>-29<span style="font-variant-position: super;">th</span>, 2026</span>. The purpose of the conference is to present the most important results coming from research activities in materials and green energy technologies and systems. The conference intends to draw the pathway for researchers, academics and industrial to come together and face challenges in the fields of advanced materials and renewable energy.</p>
+                    </div>
+                </section>
+            </div> 
+        </div>
+        <div class="divider-index">
+            <!-- History -->
+            <div class="container">
+                {% include "history.html" %}
+            </div>           
+        </div>
+</div>
+{% endblock %}

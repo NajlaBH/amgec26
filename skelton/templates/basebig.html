@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+    {% load static %}
+    {% include "head.html" %}
+    <body>
+        <!-- TOP-BAR -->
+       {% include "topbar.html" %}
+
+       <!-- NAV-BAR -->
+        {% include "navbar.html" %}
+        <div class="box-wrapper">
+            <div class="overflow-auto">
+                <main role="main" class="container">
+                    <div class="container-content">
+                        {% block content %}
+                        
+                        {% endblock %}
+                    </div>
+                </main>
+            </div>
+        </div>
+         <!-- Sponsors -->
+        <div class="container">
+            {% include "sponsors_section.html" %}
+        </div>    
+        <footer class="footer">
+            {% include "footer.html" %}
+        </footer>
+    </body>
+</html>

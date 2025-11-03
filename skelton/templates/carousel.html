@@ -1,0 +1,51 @@
+{% load static %}
+{% load bootstrap_icons %}
+
+<!-- Carousel Start -->
+<div class="container">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="CRTEn"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="CAROUSEL_1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="CAROUSEL_2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="CAROUSEL_3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="CAROUSEL_4"></button>      
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="imgcarousel">
+            <img src="{% static 'imgs/carousel/homecrten.jpg'%}" class="d-block w-100" alt="crten">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="imgcarousel">
+            <img src="{% static 'imgs/carousel/CAROUSEL_1.jpg'%}" class="d-block w-100" alt="CAROUSEL_1">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="imgcarousel">
+            <img src="{% static 'imgs/carousel/CAROUSEL_2.jpg'%}" class="d-block w-100" alt="CAROUSEL_2">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="imgcarousel">
+            <img src="{% static 'imgs/carousel/CAROUSEL_3.jpg'%}" class="d-block w-100" alt="CAROUSEL_3">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="imgcarousel">
+            <img src="{% static 'imgs/carousel/CAROUSEL_4.jpg'%}" class="d-block w-100" alt="CAROUSEL_4">
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+</div>
+<!-- Carousel End -->

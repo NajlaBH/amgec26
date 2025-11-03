@@ -1,0 +1,67 @@
+{% load static %}
+{% load bootstrap_icons %}
+<!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light bg-light m-0 p-0 sticky-top" style="margin:0px; padding: 0px; font-family: 'Montserrat', 'Roboto', 'Times', 'Cormorant', 'Spectral', 'Playfair Display', 'Raleway', 'Arial'; color:#0FABEF;">
+        <a href="{% url 'about' %}" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+            <img class="img-fluid rounded" src="{% static 'imgs/logos/AMGEC.jpg'%}"  alt="AMGEC-LOGO" style="width:15% !important; position:fixed;top:2%;">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <div class="nav-item dropdown">
+                    <a href="{% url 'index' %}" class="nav-link dropdown-toggle">Home</a>
+                    <div class="dropdown-menu bg-white bg-light m-0">
+                        <a href="index#welcome" class="dropdown-item">Welcome</a>
+                        <a href="index#history" class="dropdown-item">History</a>
+                        <a href="" class="dropdown-item">Keynotes</a>
+                        <hr class="dropdown-divider">
+                        <a href="sponsors#sponsors" class="dropdown-item">Sponsors</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="{% url 'abstractsubmission' %}" class="nav-link dropdown-toggle">Submission</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="abstractsubmission#id_abstrac_sub_form" class="dropdown-item">Abstract</a>
+                        <a href="" class="dropdown-item">Paper</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="{% url 'topics' %}" class="nav-link dropdown-toggle">Topics</a>
+                    <div class="dropdown-menu bg-white bg-light m-0">
+                        <a href="topics#topic1" class="dropdown-item">Renewable Energy and Sustainability</a>
+                        <a href="topics#topic2" class="dropdown-item">Hydrogen Technology and Energy Storage systems</a>
+                        <a href="topics#topic3" class="dropdown-item">Advanced materials and applications</a>
+                        <a href="topics#topic4" class="dropdown-item">Modeling, Simulation and Digitalization of Energy Systems</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="{% url 'committees' %}" class="nav-link dropdown-toggle">Committees</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="committees#scientificCommittee" class="dropdown-item">International Scientific Committee</a>
+                        <a href="committees#OrganizingCommittee" class="dropdown-item">Organizing Committee</a>
+                        <a href="committees#HonoraryChairman" class="dropdown-item">Chairs</a>
+                    </div>
+                </div>
+                <a href="{% url 'program' %}" class="nav-item nav-link">Program</a>
+                <div class="nav-item dropdown">
+                    <a href="{% url 'fees' %}" class="nav-link dropdown-toggle">Registration</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="fees#feestab" class="dropdown-item">Fees</a>
+                        <!--a href="fees#infobank" class="dropdown-item">Transfert Bank informations</a-->
+                        <a href="fees#register" class="dropdown-item">Register</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle">Venue</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="" class="dropdown-item">Accommodation</a>
+                        <a href="" class="dropdown-item">Transport</a>
+                    </div>
+                </div>
+                <a href="{% url 'workshop' %}"  class="nav-item nav-link">Workshop</a>
+            </div>
+        </div>
+    </nav>
+<!-- Navbar End -->

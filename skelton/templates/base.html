@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+    {% load static %}
+    {% include "head.html" %}
+    <body>
+        <!-- TOP-BAR -->
+       {% include "topbar.html" %}
+
+       <!-- NAV-BAR -->
+       {% include "navbar.html" %}
+    
+      <!-- CAROUSEL -->
+       {% include "carousel.html" %}
+       
+        <!-- MAIN START -->
+        <div class="main-base">
+            <div class="divider" style="width:auto;"> 
+                <div class="box-wrapper">
+                    <div class="overflow-auto">
+                            <main role="main" class="container">
+                            <div class="container-content">
+                                {% block content %}
+                                
+                                {% endblock %}
+                            </div>
+                        </main>
+                    </div>  
+                </div>
+            </div>
+            <div class="divider" style="width:30%;"> 
+                <div class="box-wrapper">
+                    {% include "timeline.html" %}
+                </div>
+            </div>
+        </div>
+        <!--MAIN END -->
+
+        <!--END TEST -->
+        <footer class="footer">
+            {% include "footer.html" %}
+        </footer>
+    </body>
+</html>

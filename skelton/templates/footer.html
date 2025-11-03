@@ -1,0 +1,101 @@
+{% load static %}
+{% load bootstrap_icons %}
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">         
+            <!-- previous -->
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">Previews Editions</h5>
+                <div class="row g-2">
+                    <div class="col-4">
+                        <img class="img-fluid rounded" src="{% static 'imgs/previews/amgec_23.png'%}" alt="amgec_23" title="AMGEC 2023 EDITION">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid rounded" src="{% static 'imgs/previews/amgec_22.png'%}"  alt="amgec_22" title="AMGEC 2022 EDITION">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid rounded" src="{% static 'imgs/previews/amgec_21.png'%}"  alt="amgec_22" title="AMGEC 2021 EDITION">
+                    </div>
+                </div>
+            </div>
+            <!-- previous -->
+            <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="{% url 'about' %}">About Us</a>
+                    <a class="btn btn-link" href="{% url 'contact' %}">Contact Us</a>
+                    <a class="btn btn-link" href="">Venue</a>
+            </div>
+            <!-- address -->
+            <div class="col-lg-5 col-md-6">
+                <h5 class="text-white mb-4" id="address">Address</h5>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Research and Technologies Center of Energy (CRTEn)</p>
+                <p class="mb-2"><i class="fa fa-phone me-3"></i>(+216) 79 325 215 - (+216) 52 288 629 </p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>conference@amgec-crten.com - amgec2026@gmail.com </p>
+            </div>
+            <!-- Organizer -->
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">Organizer</h5>
+                 <div class="d-flex pt-2">
+                    <a href="http://www.crten.rnrt.tn/public/fr/home"><img class="img-fluid rounded" src="{% static 'imgs/logos/CRTEn_LOGO.jpg'%}"  alt="CRTEn-LOGO"></a>
+                </div>
+            </div>
+            <!-- Partners -->
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">Partners</h5>
+                 <div class="d-flex pt-2">
+                    <a href="http://www.crten.rnrt.tn/public/fr/laboratoire/5/lanser"> <img class="img-fluid rounded" src="{% static 'imgs/logos/LaNSER_LOGO.png'%}"  alt="LaNSER_LOGO"></a>
+                </div>
+            </div>
+            <!-- follow us -->
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">Follow us</h5>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-square btn-outline-light btn-social" href="https://www.facebook.com/p/AMGEC-100052848162393"><i class="fab fa-facebook-f"></i></a>
+                    <!--a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a-->
+                    <a class="btn btn-square btn-outline-light btn-social" href="https://fr.linkedin.com/company/crten?trk=ppro_cprof"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <br/>
+                <!-- Back to Top -->
+                <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+            </div>
+
+            <!-- LANSER INFOS START -->
+            <!-- Partners -->
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">QRcode</h5>
+                 <div class="d-flex pt-2">
+                     <img class="img-fluid rounded" src="{% static 'imgs/QRcode-amgec26.svg' %}"  alt="QRCODE" title="QRCODE AMGEC 2021 EDITION" style="height:150px; widht:150px;"/>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">CRTEn MAP</h5>
+                 <div class="d-flex pt-2">
+                    <img id="addresslanser" class="card-img-bottom" src="{% static 'imgs/LaNSERaddress.jpg' %} " alt="LanserAddress.png" style="height:550px; widht:200px;"/>
+                </div>
+                <p style="font-size: small;"> <a href="https://maps.app.goo.gl/39FNxqgf8rHXFXbr5"> 36.716226, 10.426878 </a> - Soliman </p>
+            </div>
+            <!-- follow us -->
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">LaNSER MAP</h5>
+                <div class="d-flex pt-2">
+                    <img class="img-fluid rounded" src="{% static 'imgs/LaNSERaddress2.jpg' %}"  alt="LanserAddress MAP" title="LanserAddress google map" style="height:250px; widht:350px;"/>
+                </div>
+                <br/>
+                <!-- Back to Top -->
+                <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+            </div>
+        </div>
+        <br/>
+     <!-- copyright -->
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a href="#">AMGEC-2026</a>, All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->

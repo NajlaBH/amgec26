@@ -1,0 +1,24 @@
+{% extends "basebig.html" %}
+
+{% load static %}
+{% load bootstrap_icons %}
+
+<!-- ws pg Start -->
+{% block content %} 
+<section id="workshop">
+    <h2 class="mb-4" style="color:#043E84; text-aling:center;">WORKSHOPS</h2>
+    <h2 class="mb-4" style="color:#043E84; text-aling:center;">AMGEC - 2026 CONFERENCE </h2>
+    <div class="col1" >
+        <img src="{% static 'imgs/carousel/H5.jpg'%}" style="color:#043E84; align-items: baseline;" alt="H5">
+    </div>
+    <div class="col2" style="position: relative; vertical-align: middle;">
+        <h2 style="color:#567D76; text-align: center; padding:2px; margin-left: 2px;"> <i class="fa fa-lightbulb"></i> Green Energy Transition</h2>
+        <div class="container" style="color:#043E84;">
+                <p class="workshoptopic"><i class="fa fa-hand-point-right"></i> TOPIC 1: Policy</p>
+                <p class="workshoptopic"><i class="fa fa-hand-point-right"></i> TOPIC 2: Economy</p>
+                <p class="workshoptopic"><i class="fa fa-hand-point-right"></i> TOPIC 3: Industrial deployment</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
+<!-- WORKSHOP END -->
